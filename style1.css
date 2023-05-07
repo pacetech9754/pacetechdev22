@@ -1,0 +1,126 @@
+*
+*::before.
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: dark;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+}
+
+.wrapper {
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-inline: 12rem;
+    background-position: center;
+}
+
+.site-title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.25rem;
+}
+
+.tlt ul {
+    text-align: center;
+    font-size: 3rem;
+    padding-right: 5rem;
+}
+
+section {
+    padding-block : 2rem;
+}
+
+.diagonal {
+    position: relative;
+    background-image:
+    linear-gradient(
+        55deg,
+        #12c2e9,
+        #c471ed,
+        #f64f59
+    );
+    }
+ 
+
+ background-image:
+    linear-gradient(
+        55deg,
+        #12c2e9,
+        #c471ed,
+        #f64f59
+    );
+.diagonal::after {
+     background-image:
+    linear-gradient(
+        55deg,
+        #12c2e9,
+        #c471ed,
+        #f64f59
+    );
+    content: '';
+    background-color: #12c2e9;
+    position: absolute;
+    inset: 0;
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+
+.spike{
+    position: relative;
+    background-image:
+    linear-gradient(
+        55deg,
+        #fdc830,
+        #ee1414,
+        #e9c80e
+    );
+}
+
+.spike::before,
+.spike::after {
+    content: '';
+    position: absolute;
+    background: #12c2e9;
+    width: auto;
+    height: 50px;
+}
+
+.spike::before{
+    top: 0;
+}
+
+.spike::after {
+    bottom: 0;
+}
+
+.footer {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    text-align: justify;
+    background: rgb(69, 171, 211);
+    color: rgb(14, 14, 29);
+    position: relative;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer :hover {
+    display: inline-flex;
+    background: #e9c80e;
+
+}
